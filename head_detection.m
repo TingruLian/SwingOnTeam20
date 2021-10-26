@@ -20,3 +20,28 @@ label_str =strcat ('Head position x: ' ,num2str(bbox(1),'%d'),' y:' ,num2str(bbo
 videoFrame = insertObjectAnnotation(videoFrame, 'Rectangle', bbox,label_str);
 imshow(videoFrame); title('Detected head of the first frame of the video');
 
+
+
+%% Read a video frame by frame
+% Read a video frame 
+videoReader = VideoReader('swing.mp4');
+%videoPlayer = vision.VideoPlayer;
+
+faceDetector = vision.CascadeObjectDetector('UpperBody');
+faceDetector.MinSize = [150 150];
+
+% play the video fram by frame
+while hasFrame(videoReader)
+   videoFrame = readFrame(videoReader); %read next frame
+   
+
+   bbox = step(faceDetector, videoFrame);
+% Draw the returned bounding box around the detected face.
+    %label_str =strcat ('Head position x: ' ,num2str(bbox(1),'%d'),' y:' ,num2str(bbox(2),'%d'));
+    videoFrame = insertObjectAnnotation(videoFrame, 'Rectangle', bbox,label_str);
+    imshow(videoFrame); title('Detected head of the first frame of the video');
+    hold on
+   step(videoPlayer,videoFrame);
+end
+
+
