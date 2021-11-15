@@ -15,7 +15,7 @@
 # ==============================================================================
 
 
-MODEL_DIR="PoseEstimation/ML/Models"
+MODEL_DIR="SwingOn/ML/Models"
 
 # Download TF Lite models
 FILE=${MODEL_DIR}/movenet_lightning.tflite
