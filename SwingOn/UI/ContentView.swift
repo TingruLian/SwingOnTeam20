@@ -105,3 +105,57 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+
+struct ImagePicker: UIViewControllerRepresentable {
+    
+    @Binding var images: [UIImage]
+    @Binding var picker: Bool
+    
+    func updateUIViewController(_ uiViewController: PHPickerViewController, context: Context) {
+        
+    }
+    
+    func makeUIViewController(context: Context) -> PHPickerViewController {
+        var config = PHPickerConfiguration()
+        config.filter = .images
+        config.selectionLimit = 0
+        let picker = PHPickerViewController(configuration: config)
+        picker.delegate = context.coordinator
+        return picker
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        return ImagePicker.Coordinator(parent1: self)
+    }
+    
+    class Coordinator: NSObject,PHPickerViewControllerDelegate {
+        var parent: ImagePicker
+        
+        init(parent1: ImagePicker) {
+            parent = parent1
+        }
+        
+        func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+            
+            parent.picker.toggle()
+            
+            for img in results {
+                if img.itemProvider.canLoadObject(ofClass: UIImage.self) {
+                    img.itemProvider.loadObject(ofClass: UIImage.self) {
+                        (image, err) in guard let image1 = image
+                        else {
+                            print(err)
+                            return
+                        }
+                        self.parent.images.append(image as! UIImage)
+                    }
+                }
+                
+                else {
+                    print("cannot be loaded")
+                }
+            }
+        }
+
+    }
+}
