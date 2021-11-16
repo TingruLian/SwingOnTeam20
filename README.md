@@ -26,3 +26,12 @@ For detecting the centroid of a person, body landmarks will be detected, which i
 
 
 ## APIs
+
+## Build and Run
+
+Prerequisites:
+1. Cocoapods ``` sudo gem install cocoapods ```
+
+To Run:
+1. Run on Terminal ``` pod install ```. If there are issues run ``` pod update ``` first.
+2. Open ``` SwingOn.xcworkspace ```
