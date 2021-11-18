@@ -28,6 +28,7 @@ final class ViewController: UIViewController {
   @IBOutlet private weak var delegatesSegmentedControl: UISegmentedControl!
   @IBOutlet private weak var modelSegmentedControl: UISegmentedControl!
 
+
   // MARK: Pose estimation model configs
   private var modelType: ModelType = Constants.defaultModelType
   private var threadCount: Int = Constants.defaultThreadCount
