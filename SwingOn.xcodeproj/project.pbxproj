@@ -13,15 +13,19 @@
 		2727D6F5272FA628001DFC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6F4272FA628001DFC17 /* Assets.xcassets */; };
 		2727D6F8272FA628001DFC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */; };
 		2727D6FF272FA6C3001DFC17 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */; };
+		4C6B6E372745E7D200CA0E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B6E2F2745E7D200CA0E4B /* Main.storyboard */; };
+		4C6B6E382745E7D200CA0E4B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B6E312745E7D200CA0E4B /* Launch Screen.storyboard */; };
+		4C6B6E392745E7D200CA0E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E342745E7D200CA0E4B /* ViewController.swift */; };
+		4C6B6E3A2745E7D200CA0E4B /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E362745E7D200CA0E4B /* OverlayView.swift */; };
+		4C6B6E582745EC9A00CA0E4B /* Data+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E552745EC9A00CA0E4B /* Data+TFLite.swift */; };
+		4C6B6E592745EC9A00CA0E4B /* CGSize+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E562745EC9A00CA0E4B /* CGSize+TFLite.swift */; };
+		4C6B6E5A2745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E572745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift */; };
 		4CFFC60C2741EC98000D2320 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60B2741EC97000D2320 /* CameraFeedManager.swift */; };
 		4CFFC6122741ECC3000D2320 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60E2741ECC3000D2320 /* PoseEstimator.swift */; };
 		4CFFC6132741ECC3000D2320 /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60F2741ECC3000D2320 /* MoveNet.swift */; };
 		4CFFC6142741ECC3000D2320 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6102741ECC3000D2320 /* PoseData.swift */; };
 		4CFFC6152741ECC3000D2320 /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6112741ECC3000D2320 /* PoseConfig.swift */; };
 		4CFFC6172741ECD9000D2320 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6162741ECD9000D2320 /* OverlayView.swift */; };
-		4CFFC61C2741F05C000D2320 /* Data+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6192741F05C000D2320 /* Data+TFLite.swift */; };
-		4CFFC61D2741F05C000D2320 /* CGSize+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC61A2741F05C000D2320 /* CGSize+TFLite.swift */; };
-		4CFFC61E2741F05C000D2320 /* CVPixelBuffer+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC61B2741F05C000D2320 /* CVPixelBuffer+TFLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,13 @@
 		2727D6F4272FA628001DFC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4C6B6E302745E7D200CA0E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C6B6E322745E7D200CA0E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4C6B6E342745E7D200CA0E4B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C6B6E362745E7D200CA0E4B /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		4C6B6E552745EC9A00CA0E4B /* Data+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+TFLite.swift"; sourceTree = "<group>"; };
+		4C6B6E562745EC9A00CA0E4B /* CGSize+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+TFLite.swift"; sourceTree = "<group>"; };
+		4C6B6E572745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+TFLite.swift"; sourceTree = "<group>"; };
 		4CC79D89E7C95E77577EA08B /* Pods-SwingOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwingOn.release.xcconfig"; path = "Target Support Files/Pods-SwingOn/Pods-SwingOn.release.xcconfig"; sourceTree = "<group>"; };
 		4CFFC60B2741EC97000D2320 /* CameraFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
 		4CFFC60E2741ECC3000D2320 /* PoseEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
@@ -38,9 +49,6 @@
 		4CFFC6102741ECC3000D2320 /* PoseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
 		4CFFC6112741ECC3000D2320 /* PoseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
 		4CFFC6162741ECD9000D2320 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		4CFFC6192741F05C000D2320 /* Data+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+TFLite.swift"; sourceTree = "<group>"; };
-		4CFFC61A2741F05C000D2320 /* CGSize+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+TFLite.swift"; sourceTree = "<group>"; };
-		4CFFC61B2741F05C000D2320 /* CVPixelBuffer+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+TFLite.swift"; sourceTree = "<group>"; };
 		70CD5C2A9640B9EB9BF00863 /* Pods_SwingOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwingOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDB36D028DE752E69AA4DC0 /* Pods-SwingOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwingOn.debug.xcconfig"; path = "Target Support Files/Pods-SwingOn/Pods-SwingOn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +113,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C6B6E2E2745E7D200CA0E4B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E2F2745E7D200CA0E4B /* Main.storyboard */,
+				4C6B6E312745E7D200CA0E4B /* Launch Screen.storyboard */,
+			);
+			name = Storyboards;
+			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/UI/Storyboards;
+			sourceTree = "<group>";
+		};
+		4C6B6E332745E7D200CA0E4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E342745E7D200CA0E4B /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/UI/ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C6B6E352745E7D200CA0E4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E362745E7D200CA0E4B /* OverlayView.swift */,
+			);
+			name = Views;
+			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/UI/Views;
+			sourceTree = "<group>";
+		};
+		4C6B6E542745EB6E00CA0E4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E562745EC9A00CA0E4B /* CGSize+TFLite.swift */,
+				4C6B6E572745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift */,
+				4C6B6E552745EC9A00CA0E4B /* Data+TFLite.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4CFFC6092741A9FC000D2320 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4C6B6E2E2745E7D200CA0E4B /* Storyboards */,
+				4C6B6E332745E7D200CA0E4B /* ViewControllers */,
+				4C6B6E352745E7D200CA0E4B /* Views */,
 				2727D6F2272FA627001DFC17 /* ContentView.swift */,
 				4CFFC6162741ECD9000D2320 /* OverlayView.swift */,
 			);
@@ -125,21 +174,10 @@
 		4CFFC60D2741ECC3000D2320 /* ML */ = {
 			isa = PBXGroup;
 			children = (
-				4CFFC6182741F05C000D2320 /* Extensions */,
+				4C6B6E542745EB6E00CA0E4B /* Extensions */,
 				4CFFC6202741F58C000D2320 /* Models */,
 			);
 			path = ML;
-			sourceTree = "<group>";
-		};
-		4CFFC6182741F05C000D2320 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4CFFC6192741F05C000D2320 /* Data+TFLite.swift */,
-				4CFFC61A2741F05C000D2320 /* CGSize+TFLite.swift */,
-				4CFFC61B2741F05C000D2320 /* CVPixelBuffer+TFLite.swift */,
-			);
-			name = Extensions;
-			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/ML/Extensions;
 			sourceTree = "<group>";
 		};
 		4CFFC6202741F58C000D2320 /* Models */ = {
@@ -225,6 +263,8 @@
 				2727D6FF272FA6C3001DFC17 /* Launch Screen.storyboard in Resources */,
 				2727D6F8272FA628001DFC17 /* Preview Assets.xcassets in Resources */,
 				2727D6F5272FA628001DFC17 /* Assets.xcassets in Resources */,
+				4C6B6E382745E7D200CA0E4B /* Launch Screen.storyboard in Resources */,
+				4C6B6E372745E7D200CA0E4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,19 +320,40 @@
 			files = (
 				4CFFC6152741ECC3000D2320 /* PoseConfig.swift in Sources */,
 				4CFFC6172741ECD9000D2320 /* OverlayView.swift in Sources */,
+				4C6B6E592745EC9A00CA0E4B /* CGSize+TFLite.swift in Sources */,
+				4C6B6E582745EC9A00CA0E4B /* Data+TFLite.swift in Sources */,
 				4CFFC6142741ECC3000D2320 /* PoseData.swift in Sources */,
 				4CFFC6132741ECC3000D2320 /* MoveNet.swift in Sources */,
 				2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */,
 				4CFFC6122741ECC3000D2320 /* PoseEstimator.swift in Sources */,
-				4CFFC61D2741F05C000D2320 /* CGSize+TFLite.swift in Sources */,
-				4CFFC61E2741F05C000D2320 /* CVPixelBuffer+TFLite.swift in Sources */,
+				4C6B6E392745E7D200CA0E4B /* ViewController.swift in Sources */,
+				4C6B6E5A2745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift in Sources */,
+				4C6B6E3A2745E7D200CA0E4B /* OverlayView.swift in Sources */,
 				2727D6F1272FA627001DFC17 /* SwingOnApp.swift in Sources */,
-				4CFFC61C2741F05C000D2320 /* Data+TFLite.swift in Sources */,
 				4CFFC60C2741EC98000D2320 /* CameraFeedManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C6B6E2F2745E7D200CA0E4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6B6E302745E7D200CA0E4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C6B6E312745E7D200CA0E4B /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6B6E322745E7D200CA0E4B /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2727D6F9272FA628001DFC17 /* Debug */ = {
