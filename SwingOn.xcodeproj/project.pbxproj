@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1EA17C6AE134E3CB780CBF28 /* Pods_SwingOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CD5C2A9640B9EB9BF00863 /* Pods_SwingOn.framework */; };
 		2727D6F1272FA627001DFC17 /* SwingOnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727D6F0272FA627001DFC17 /* SwingOnApp.swift */; };
-		2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727D6F2272FA627001DFC17 /* ContentView.swift */; };
 		2727D6F5272FA628001DFC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6F4272FA628001DFC17 /* Assets.xcassets */; };
 		2727D6F8272FA628001DFC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */; };
 		2727D6FF272FA6C3001DFC17 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */; };
@@ -25,13 +24,11 @@
 		4CFFC6132741ECC3000D2320 /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60F2741ECC3000D2320 /* MoveNet.swift */; };
 		4CFFC6142741ECC3000D2320 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6102741ECC3000D2320 /* PoseData.swift */; };
 		4CFFC6152741ECC3000D2320 /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6112741ECC3000D2320 /* PoseConfig.swift */; };
-		4CFFC6172741ECD9000D2320 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6162741ECD9000D2320 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2727D6ED272FA627001DFC17 /* SwingOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwingOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2727D6F0272FA627001DFC17 /* SwingOnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingOnApp.swift; sourceTree = "<group>"; };
-		2727D6F2272FA627001DFC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2727D6F4272FA628001DFC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -48,7 +45,6 @@
 		4CFFC60F2741ECC3000D2320 /* MoveNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveNet.swift; sourceTree = "<group>"; };
 		4CFFC6102741ECC3000D2320 /* PoseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
 		4CFFC6112741ECC3000D2320 /* PoseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
-		4CFFC6162741ECD9000D2320 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		70CD5C2A9640B9EB9BF00863 /* Pods_SwingOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwingOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDB36D028DE752E69AA4DC0 /* Pods-SwingOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwingOn.debug.xcconfig"; path = "Target Support Files/Pods-SwingOn/Pods-SwingOn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,8 +153,6 @@
 				4C6B6E2E2745E7D200CA0E4B /* Storyboards */,
 				4C6B6E332745E7D200CA0E4B /* ViewControllers */,
 				4C6B6E352745E7D200CA0E4B /* Views */,
-				2727D6F2272FA627001DFC17 /* ContentView.swift */,
-				4CFFC6162741ECD9000D2320 /* OverlayView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -319,12 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CFFC6152741ECC3000D2320 /* PoseConfig.swift in Sources */,
-				4CFFC6172741ECD9000D2320 /* OverlayView.swift in Sources */,
 				4C6B6E592745EC9A00CA0E4B /* CGSize+TFLite.swift in Sources */,
 				4C6B6E582745EC9A00CA0E4B /* Data+TFLite.swift in Sources */,
 				4CFFC6142741ECC3000D2320 /* PoseData.swift in Sources */,
 				4CFFC6132741ECC3000D2320 /* MoveNet.swift in Sources */,
-				2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */,
 				4CFFC6122741ECC3000D2320 /* PoseEstimator.swift in Sources */,
 				4C6B6E392745E7D200CA0E4B /* ViewController.swift in Sources */,
 				4C6B6E5A2745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift in Sources */,
