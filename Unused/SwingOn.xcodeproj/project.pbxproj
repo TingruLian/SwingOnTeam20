@@ -7,26 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EA17C6AE134E3CB780CBF28 /* Pods_SwingOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CD5C2A9640B9EB9BF00863 /* Pods_SwingOn.framework */; };
 		2727D6F1272FA627001DFC17 /* SwingOnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727D6F0272FA627001DFC17 /* SwingOnApp.swift */; };
-		2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2727D6F2272FA627001DFC17 /* ContentView.swift */; };
 		2727D6F5272FA628001DFC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6F4272FA628001DFC17 /* Assets.xcassets */; };
 		2727D6F8272FA628001DFC17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */; };
 		2727D6FF272FA6C3001DFC17 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */; };
-		27F48EDA2745D3640031C693 /* FilePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F48ED92745D3640031C693 /* FilePickerModel.swift */; };
-		27F5FAD72744B54F0036FC22 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5FAD62744B54F0036FC22 /* MapViewModel.swift */; };
-		27F9C2F427456105008F591C /* PhotoPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9C2F327456105008F591C /* PhotoPickerModel.swift */; };
+		4C6B6E372745E7D200CA0E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B6E2F2745E7D200CA0E4B /* Main.storyboard */; };
+		4C6B6E382745E7D200CA0E4B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B6E312745E7D200CA0E4B /* Launch Screen.storyboard */; };
+		4C6B6E392745E7D200CA0E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E342745E7D200CA0E4B /* ViewController.swift */; };
+		4C6B6E3A2745E7D200CA0E4B /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E362745E7D200CA0E4B /* OverlayView.swift */; };
+		4C6B6E582745EC9A00CA0E4B /* Data+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E552745EC9A00CA0E4B /* Data+TFLite.swift */; };
+		4C6B6E592745EC9A00CA0E4B /* CGSize+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E562745EC9A00CA0E4B /* CGSize+TFLite.swift */; };
+		4C6B6E5A2745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6E572745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift */; };
+		4CFFC60C2741EC98000D2320 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60B2741EC97000D2320 /* CameraFeedManager.swift */; };
+		4CFFC6122741ECC3000D2320 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60E2741ECC3000D2320 /* PoseEstimator.swift */; };
+		4CFFC6132741ECC3000D2320 /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC60F2741ECC3000D2320 /* MoveNet.swift */; };
+		4CFFC6142741ECC3000D2320 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6102741ECC3000D2320 /* PoseData.swift */; };
+		4CFFC6152741ECC3000D2320 /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFC6112741ECC3000D2320 /* PoseConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2727D6ED272FA627001DFC17 /* SwingOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwingOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2727D6F0272FA627001DFC17 /* SwingOnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingOnApp.swift; sourceTree = "<group>"; };
-		2727D6F2272FA627001DFC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2727D6F4272FA628001DFC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		27F48ED92745D3640031C693 /* FilePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerModel.swift; sourceTree = "<group>"; };
-		27F5FAD62744B54F0036FC22 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		27F9C2F327456105008F591C /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerModel.swift; sourceTree = "<group>"; };
+		4C6B6E302745E7D200CA0E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C6B6E322745E7D200CA0E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4C6B6E342745E7D200CA0E4B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C6B6E362745E7D200CA0E4B /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		4C6B6E552745EC9A00CA0E4B /* Data+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+TFLite.swift"; sourceTree = "<group>"; };
+		4C6B6E562745EC9A00CA0E4B /* CGSize+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+TFLite.swift"; sourceTree = "<group>"; };
+		4C6B6E572745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+TFLite.swift"; sourceTree = "<group>"; };
+		4CC79D89E7C95E77577EA08B /* Pods-SwingOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwingOn.release.xcconfig"; path = "Target Support Files/Pods-SwingOn/Pods-SwingOn.release.xcconfig"; sourceTree = "<group>"; };
+		4CFFC60B2741EC97000D2320 /* CameraFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		4CFFC60E2741ECC3000D2320 /* PoseEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		4CFFC60F2741ECC3000D2320 /* MoveNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveNet.swift; sourceTree = "<group>"; };
+		4CFFC6102741ECC3000D2320 /* PoseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
+		4CFFC6112741ECC3000D2320 /* PoseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
+		70CD5C2A9640B9EB9BF00863 /* Pods_SwingOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwingOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDB36D028DE752E69AA4DC0 /* Pods-SwingOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwingOn.debug.xcconfig"; path = "Target Support Files/Pods-SwingOn/Pods-SwingOn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA17C6AE134E3CB780CBF28 /* Pods_SwingOn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +66,8 @@
 			children = (
 				2727D6EF272FA627001DFC17 /* SwingOn */,
 				2727D6EE272FA627001DFC17 /* Products */,
+				BCCCB0D70C64C43AD661458E /* Pods */,
+				4A6814DF3E880AFCB58B3654 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,11 +82,10 @@
 		2727D6EF272FA627001DFC17 /* SwingOn */ = {
 			isa = PBXGroup;
 			children = (
+				4CFFC60D2741ECC3000D2320 /* ML */,
 				2727D6F0272FA627001DFC17 /* SwingOnApp.swift */,
-				2727D6F2272FA627001DFC17 /* ContentView.swift */,
-				27F5FAD62744B54F0036FC22 /* MapViewModel.swift */,
-				27F9C2F327456105008F591C /* PhotoPickerModel.swift */,
-				27F48ED92745D3640031C693 /* FilePickerModel.swift */,
+				4CFFC60A2741EC97000D2320 /* Camera */,
+				4CFFC6092741A9FC000D2320 /* UI */,
 				2727D6F4272FA628001DFC17 /* Assets.xcassets */,
 				2727D6F6272FA628001DFC17 /* Preview Content */,
 				2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */,
@@ -79,6 +101,99 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4A6814DF3E880AFCB58B3654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70CD5C2A9640B9EB9BF00863 /* Pods_SwingOn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C6B6E2E2745E7D200CA0E4B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E2F2745E7D200CA0E4B /* Main.storyboard */,
+				4C6B6E312745E7D200CA0E4B /* Launch Screen.storyboard */,
+			);
+			name = Storyboards;
+			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/UI/Storyboards;
+			sourceTree = "<group>";
+		};
+		4C6B6E332745E7D200CA0E4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E342745E7D200CA0E4B /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/UI/ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C6B6E352745E7D200CA0E4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E362745E7D200CA0E4B /* OverlayView.swift */,
+			);
+			name = Views;
+			path = ../../../examples/lite/examples/pose_estimation/ios/PoseEstimation/UI/Views;
+			sourceTree = "<group>";
+		};
+		4C6B6E542745EB6E00CA0E4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E562745EC9A00CA0E4B /* CGSize+TFLite.swift */,
+				4C6B6E572745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift */,
+				4C6B6E552745EC9A00CA0E4B /* Data+TFLite.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4CFFC6092741A9FC000D2320 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E2E2745E7D200CA0E4B /* Storyboards */,
+				4C6B6E332745E7D200CA0E4B /* ViewControllers */,
+				4C6B6E352745E7D200CA0E4B /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4CFFC60A2741EC97000D2320 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4CFFC60B2741EC97000D2320 /* CameraFeedManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		4CFFC60D2741ECC3000D2320 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B6E542745EB6E00CA0E4B /* Extensions */,
+				4CFFC6202741F58C000D2320 /* Models */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		4CFFC6202741F58C000D2320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CFFC6112741ECC3000D2320 /* PoseConfig.swift */,
+				4CFFC60E2741ECC3000D2320 /* PoseEstimator.swift */,
+				4CFFC60F2741ECC3000D2320 /* MoveNet.swift */,
+				4CFFC6102741ECC3000D2320 /* PoseData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCCCB0D70C64C43AD661458E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB36D028DE752E69AA4DC0 /* Pods-SwingOn.debug.xcconfig */,
+				4CC79D89E7C95E77577EA08B /* Pods-SwingOn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +201,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2727D6FB272FA628001DFC17 /* Build configuration list for PBXNativeTarget "SwingOn" */;
 			buildPhases = (
+				6CC30646B4A9A9490E9E4EFA /* [CP] Check Pods Manifest.lock */,
+				4CFFC61F2741F2ED000D2320 /* Download TFLite Models */,
 				2727D6E9272FA627001DFC17 /* Sources */,
 				2727D6EA272FA627001DFC17 /* Frameworks */,
 				2727D6EB272FA627001DFC17 /* Resources */,
@@ -140,25 +257,95 @@
 				2727D6FF272FA6C3001DFC17 /* Launch Screen.storyboard in Resources */,
 				2727D6F8272FA628001DFC17 /* Preview Assets.xcassets in Resources */,
 				2727D6F5272FA628001DFC17 /* Assets.xcassets in Resources */,
+				4C6B6E382745E7D200CA0E4B /* Launch Screen.storyboard in Resources */,
+				4C6B6E372745E7D200CA0E4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CFFC61F2741F2ED000D2320 /* Download TFLite Models */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Download TFLite Models";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$SRCROOT/RunScripts/download_models.sh\"\n";
+		};
+		6CC30646B4A9A9490E9E4EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwingOn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2727D6E9272FA627001DFC17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F48EDA2745D3640031C693 /* FilePickerModel.swift in Sources */,
-				2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */,
+				4CFFC6152741ECC3000D2320 /* PoseConfig.swift in Sources */,
+				4C6B6E592745EC9A00CA0E4B /* CGSize+TFLite.swift in Sources */,
+				4C6B6E582745EC9A00CA0E4B /* Data+TFLite.swift in Sources */,
+				4CFFC6142741ECC3000D2320 /* PoseData.swift in Sources */,
+				4CFFC6132741ECC3000D2320 /* MoveNet.swift in Sources */,
+				4CFFC6122741ECC3000D2320 /* PoseEstimator.swift in Sources */,
+				4C6B6E392745E7D200CA0E4B /* ViewController.swift in Sources */,
+				4C6B6E5A2745EC9A00CA0E4B /* CVPixelBuffer+TFLite.swift in Sources */,
+				4C6B6E3A2745E7D200CA0E4B /* OverlayView.swift in Sources */,
 				2727D6F1272FA627001DFC17 /* SwingOnApp.swift in Sources */,
-				27F9C2F427456105008F591C /* PhotoPickerModel.swift in Sources */,
-				27F5FAD72744B54F0036FC22 /* MapViewModel.swift in Sources */,
+				4CFFC60C2741EC98000D2320 /* CameraFeedManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C6B6E2F2745E7D200CA0E4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6B6E302745E7D200CA0E4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C6B6E312745E7D200CA0E4B /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6B6E322745E7D200CA0E4B /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2727D6F9272FA628001DFC17 /* Debug */ = {
@@ -279,31 +466,29 @@
 		};
 		2727D6FC272FA628001DFC17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDB36D028DE752E69AA4DC0 /* Pods-SwingOn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwingOn/Preview Content\"";
-				DEVELOPMENT_TEAM = 74LCLL86V9;
+				DEVELOPMENT_TEAM = MSLJ78YPR6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the App to access your camera";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow the App to access your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UIMainStoryboardFile = "Launch Screen";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Team20.SwingOnTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team20.SwingOn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -313,31 +498,29 @@
 		};
 		2727D6FD272FA628001DFC17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC79D89E7C95E77577EA08B /* Pods-SwingOn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwingOn/Preview Content\"";
-				DEVELOPMENT_TEAM = 74LCLL86V9;
+				DEVELOPMENT_TEAM = MSLJ78YPR6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the App to access your camera";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow the App to access your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UIMainStoryboardFile = "Launch Screen";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Team20.SwingOnTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Team20.SwingOn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
