@@ -31,13 +31,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "BU-logo-120x120.png",
+      "filename" : "logo_120*120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "BU-logo-180x180.png",
+      "filename" : "logo_180*180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
