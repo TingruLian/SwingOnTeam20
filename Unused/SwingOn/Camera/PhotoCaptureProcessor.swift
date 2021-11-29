@@ -2,7 +2,7 @@
 //  PhotoCaptureProcessor.swift
 //  abseil
 //
-//  Created by Rolando Rodriguez on 10/15/20.
+//  Created by Yoel Beyene on 11/22/21.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  CameraPreview.swift
 //  SwiftCamera
 //
-//  Created by Rolando Rodriguez on 10/17/20.
+//  Created by Yoel Beyene on 11/22/21.
 //
 
 import SwiftUI
