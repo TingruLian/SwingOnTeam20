@@ -15,12 +15,9 @@
 		27F48EDA2745D3640031C693 /* FilePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F48ED92745D3640031C693 /* FilePickerModel.swift */; };
 		27F5FAD72744B54F0036FC22 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5FAD62744B54F0036FC22 /* MapViewModel.swift */; };
 		27F9C2F427456105008F591C /* PhotoPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9C2F327456105008F591C /* PhotoPickerModel.swift */; };
-<<<<<<< HEAD
-		EE4F1C46274C967600409B6A /* VideoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F1C45274C967500409B6A /* VideoAnalysis.swift */; };
-=======
+		4C7C4417275471D6008591CE /* VideoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C4416275471D6008591CE /* VideoAnalysis.swift */; };
 		4CD2517027498F690046B976 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2516F27498F680046B976 /* CameraModel.swift */; };
 		4CD251742749AF3F0046B976 /* VideoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD251732749AF3F0046B976 /* VideoViewer.swift */; };
->>>>>>> b6855db (Video feature and UI connection)
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,20 +26,13 @@
 		2727D6F2272FA627001DFC17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = SwingOn/ContentView.swift; sourceTree = "<group>"; };
 		2727D6F4272FA628001DFC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SwingOn/Assets.xcassets; sourceTree = "<group>"; };
 		2727D6F7272FA628001DFC17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		27F48ED92745D3640031C693 /* FilePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerModel.swift; sourceTree = "<group>"; };
-		27F5FAD62744B54F0036FC22 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		27F9C2F327456105008F591C /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerModel.swift; sourceTree = "<group>"; };
-		EE4F1C45274C967500409B6A /* VideoAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnalysis.swift; sourceTree = "<group>"; };
-=======
 		2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "SwingOn/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		27F48ED92745D3640031C693 /* FilePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilePickerModel.swift; path = SwingOn/FilePickerModel.swift; sourceTree = "<group>"; };
 		27F5FAD62744B54F0036FC22 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SwingOn/MapViewModel.swift; sourceTree = "<group>"; };
 		27F9C2F327456105008F591C /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoPickerModel.swift; path = SwingOn/PhotoPickerModel.swift; sourceTree = "<group>"; };
+		4C7C4416275471D6008591CE /* VideoAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoAnalysis.swift; path = SwingOn/VideoAnalysis.swift; sourceTree = "<group>"; };
 		4CD2516F27498F680046B976 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		4CD251732749AF3F0046B976 /* VideoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewer.swift; sourceTree = "<group>"; };
->>>>>>> b6855db (Video feature and UI connection)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +56,7 @@
 				4CD251732749AF3F0046B976 /* VideoViewer.swift */,
 				27F9C2F327456105008F591C /* PhotoPickerModel.swift */,
 				27F48ED92745D3640031C693 /* FilePickerModel.swift */,
+				4C7C4416275471D6008591CE /* VideoAnalysis.swift */,
 				2727D6F4272FA628001DFC17 /* Assets.xcassets */,
 				2727D6F6272FA628001DFC17 /* Preview Content */,
 				2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */,
@@ -81,25 +72,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		2727D6EF272FA627001DFC17 /* SwingOn */ = {
-			isa = PBXGroup;
-			children = (
-				2727D6F0272FA627001DFC17 /* SwingOnApp.swift */,
-				2727D6F2272FA627001DFC17 /* ContentView.swift */,
-				27F5FAD62744B54F0036FC22 /* MapViewModel.swift */,
-				27F9C2F327456105008F591C /* PhotoPickerModel.swift */,
-				27F48ED92745D3640031C693 /* FilePickerModel.swift */,
-				EE4F1C45274C967500409B6A /* VideoAnalysis.swift */,
-				2727D6F4272FA628001DFC17 /* Assets.xcassets */,
-				2727D6F6272FA628001DFC17 /* Preview Content */,
-				2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */,
-			);
-			path = SwingOn;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> b6855db (Video feature and UI connection)
 		2727D6F6272FA628001DFC17 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,12 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7C4417275471D6008591CE /* VideoAnalysis.swift in Sources */,
 				4CD251742749AF3F0046B976 /* VideoViewer.swift in Sources */,
 				27F48EDA2745D3640031C693 /* FilePickerModel.swift in Sources */,
 				2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */,
 				4CD2517027498F690046B976 /* CameraModel.swift in Sources */,
 				2727D6F1272FA627001DFC17 /* SwingOnApp.swift in Sources */,
-				EE4F1C46274C967600409B6A /* VideoAnalysis.swift in Sources */,
 				27F9C2F427456105008F591C /* PhotoPickerModel.swift in Sources */,
 				27F5FAD72744B54F0036FC22 /* MapViewModel.swift in Sources */,
 			);
@@ -318,11 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwingOn/Preview Content\"";
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = LQA5VA4NV3;
-=======
 				DEVELOPMENT_TEAM = MSLJ78YPR6;
->>>>>>> b6855db (Video feature and UI connection)
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the App to access your camera";
@@ -340,11 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = team20.swingon;
-=======
 				PRODUCT_BUNDLE_IDENTIFIER = com.Team20.SwingOn;
->>>>>>> b6855db (Video feature and UI connection)
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,11 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwingOn/Preview Content\"";
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = LQA5VA4NV3;
-=======
 				DEVELOPMENT_TEAM = MSLJ78YPR6;
->>>>>>> b6855db (Video feature and UI connection)
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the App to access your camera";
@@ -382,11 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = team20.swingon;
-=======
 				PRODUCT_BUNDLE_IDENTIFIER = com.Team20.SwingOn;
->>>>>>> b6855db (Video feature and UI connection)
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

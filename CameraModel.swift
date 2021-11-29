@@ -6,12 +6,10 @@
 // Video
 //
 
-
-//import SwiftUI
 import AVFoundation
 import SwiftUI
 
-class CameraModel: ObservableObject{
+class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate{
     
     // Create capture session
     var cameraFeedSession = AVCaptureSession()
@@ -19,6 +17,10 @@ class CameraModel: ObservableObject{
     
     let output = AVCaptureVideoDataOutput()
     //var previewLayer: AVCaptureVideoPreviewLayer?
+    
+    // Set up queue - guarantees that video frames will be delivered in order
+    let videoDataOutputQueue = DispatchQueue(label: "CameraFeedDataOutput", qos: .userInitiated,
+                                                         attributes: [], autoreleaseFrequency: .workItem)
     var previewLayer: AVCaptureVideoPreviewLayer!
     
     func checkPermissions(){
@@ -46,6 +48,9 @@ class CameraModel: ObservableObject{
     private func cameraSetUp(){
         //let session = AVCaptureSession()
         
+        // Set up configuration done atomically
+        cameraFeedSession.beginConfiguration()
+        
         // Choose device --> rear camera
         let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
         
@@ -58,7 +63,17 @@ class CameraModel: ObservableObject{
         // Add output
         if cameraFeedSession.canAddOutput(output){ 
             cameraFeedSession.addOutput(output)
+            output.alwaysDiscardsLateVideoFrames = true 
+            output.videoSettings = [
+                String(kCVPixelBufferPixelFormatTypeKey): Int(kCVPixelFormatType_420YpCbCr8BiPlanarFullRange)
+            ]
+            output.setSampleBufferDelegate(self, queue: videoDataOutputQueue)
         }
+        
+        // Always process frames
+        output.connection(with: .video)?.isEnabled = true
+        cameraFeedSession.commitConfiguration()
+        
         
 //        // Set preview layer
 //        previewLayer.videoGravity = .resizeAspectFill
@@ -68,7 +83,19 @@ class CameraModel: ObservableObject{
 //        session.startRunning()
 //        cameraFeedSession = session
     }
+    
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        // Called when capture session is running. Receives buffer from camera stream
+        
+        // 1. Create request handler
+        // 2. Perform request (VNDetectBody with handler
+        // 3. VNDetectHumanBodyPoseRequest
+        // ...
+        
+        print("captureOutput")
+    }
 }
+
 
 // To preview video on VideoViewer.swift
 struct CameraPreview: UIViewRepresentable{
