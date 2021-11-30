@@ -18,21 +18,31 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
-                Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-                    .disabled(true)
-                    .ignoresSafeArea(.container, edges: .top)
-                    .accentColor(Color(.systemBlue))
-                    .onAppear {
-                        viewModel.checkIfLocationServicesIsEnabled()
-                    }
+            // Map is commented out for testing purposes
+//                Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+//                    .disabled(true)
+//                    .ignoresSafeArea(.container, edges: .top)
+//                    .accentColor(Color(.systemBlue))
+//                    .onAppear {
+//                        viewModel.checkIfLocationServicesIsEnabled()
+//                    }
                 
                 Spacer()
+                NavigationLink(destination: VideoViewer()) {
+                    Text("Open camera")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .background(.blue)
+                .cornerRadius(13)
+                .shadow(color: .blue.opacity(0.5), radius: 10, x: 0, y: 5)
+                .padding(.horizontal)
                 
                 Button {
                     isShowingConfirmation = true
                 } label: {
-                    Text("Let's start here")
+                    Text("Upload Video")
                         .font(.headline)
                         .foregroundColor(.white)
                 }
@@ -41,8 +51,11 @@ struct ContentView: View {
                 .cornerRadius(13)
                 .shadow(color: .blue.opacity(0.5), radius: 10, x: 0, y: 5)
                 .padding()
-                .confirmationDialog("Start uploading your videos", isPresented: $isShowingConfirmation, titleVisibility: .visible) {
-                    Button("Open Camera", action: {})
+                .confirmationDialog("Choose a video source", isPresented: $isShowingConfirmation, titleVisibility: .visible) {
+                    
+                    // original:
+//                    Button("Camera", action:{})
+                    
                     Button("Upload from Photos", action: {
                         isShowingPhotoPickerModel = true
                     })
@@ -50,6 +63,11 @@ struct ContentView: View {
                 }
                 
                 Spacer()
+                
+//                // This works:
+//                NavigationLink(destination: SecondView()) {
+//                            Text("Press on me")
+//                         }.buttonStyle(PlainButtonStyle())
                 
             }
             .navigationTitle("Welcome")
@@ -69,10 +87,11 @@ class ContentView_Previews: PreviewProvider {
     }
 }
 
-struct SecondView: View {
-    var body: some View {
-        VStack {
-            
-        }
-    }
-}
+//struct SecondView: View {
+//    var body: some View {
+//       // VStack {
+//            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//       // }
+//    }
+//}
+
