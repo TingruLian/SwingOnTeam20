@@ -31,13 +31,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "logo_120*120.png",
+      "filename" : "SwingOn-logo-120*120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "logo_180*180.png",
+      "filename" : "SwingOn-logo-180*180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -88,7 +88,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "BU-logo-1024x1024.png",
+      "filename" : "SwingOn-logo-1024*1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
