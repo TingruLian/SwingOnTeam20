@@ -1,5 +1,8 @@
-# Golf_Swing (SwingOn)
-Senior Design Team 20
+# SwingOn
+BU ECE Senior Design Team 20
+
+## Client:
+- Professor Martin Herbordt
 
 ## Team Members:
 
@@ -8,33 +11,50 @@ Senior Design Team 20
 - Hanlin Mai (hanlinm@bu.edu)
 - Jessica Martinez Marquez (jessmtzm@bu.edu)
 
+
 ## Video
-https://youtu.be/oSQ9YKRs6xs
+
+- First semester PDR: https://youtu.be/oSQ9YKRs6xs
+
 
 ## Vision and Goals of Project
-The goal of this project is to create a golf swing improver that focuses on concentration, balance, and consistency. SwingOn is a cross-platform mobile APP that tracks the motions of the golfer in real-time. Motion sensors may be used to detect the golfer’s actions. Multiple factors of the golfer will be monitored, including body motion detection and head rotation. Data of the golfer’s motion will be recorded, stored and analyzed to calculate the golfer's consistency of their swing as well as to keep a record of their improvement over time. MATLAB will be used for video processing and React Native for developing the front-end of the APP.
+
+The goal of this project is to create a golf swing improver that focuses on concentration, balance, and consistency. SwingOn is a native iOS app that tracks the motions of the golfer in real-time from live video or user uploaded videos.  Multiple factors of the golfer will be monitored, including body motion detection and head rotation. Data of the golfer’s motion will be recorded, stored and analyzed to calculate the golfer's balance and consistency of their swing as well as to keep a record of their improvement over time. 
 
 
-## APP
-The APP will be created using Swift UI. 
-Swift is a powerful and intuitive programming language for iOS, iPadOS, macOS, tvOS, and watchOS. Writing Swift code is interactive and fun, the syntax is concise yet expressive, and Swift includes modern features developers love. Swift code is safe by design, yet also produces software that runs lightning-fast.
+## Scope and Features
+
+- Takes two different kinds of input sources: live or user uploaded videos
+- Finds the balance of the user
+  - Detects key body points of the user's body to calculate their centroid
+- Determines user's consistency
+  - Calculates the change of the centroid's position over time
+- Provides auditory feedback
+
+
+### Application
+
+The app will be created using Swift and SwiftUI for the front-end. Swift is a powerful and intuitive programming language for iOS, iPadOS, macOS, tvOS, and watchOS.
 
 ![image](https://user-images.githubusercontent.com/90277008/141120953-aca2749f-c66d-41c9-b61a-e66a547edc63.png)
 
 
-## Algorithm
-For detecting the centroid of a person, body landmarks will be detected, which includes nineteen body points. This is using the Vision Framework. The Vision framework performs face and face landmark detection, text detection, barcode recognition, image registration, and general feature tracking. Vision also allows the use of custom Core ML models for tasks like classification or object detection.
+### Algorithm
+
+For detecting the centroid of a person, body landmarks will be detected, which includes nineteen body points. This is using the Vision Framework by Apple. The Vision framework performs body and face landmark detection, text detection, barcode recognition, image registration, and general feature tracking. Vision also allows the use of custom Core ML models for tasks like classification or object detection.
 
 ![image](https://user-images.githubusercontent.com/90277008/141121033-091a6b93-2e1c-45dd-b431-a6166b527162.png)
 
 
-## APIs
-
-## Build and Run
+## Install Steps
 
 Prerequisites:
-1. Cocoapods ``` sudo gem install cocoapods ```
+1. XCode 13.1
+2. iOS 15+ device 
 
 To Run:
-1. Run on Terminal ``` pod install ```. If there are issues run ``` pod update ``` first.
-2. Open ``` SwingOn.xcworkspace ```
+1. Clone this git repo
+2. On Terminal, ``` open SwingOn.xcodeproj ``` 
+3. With the device connected to the computer, go to Product > Destination > Find and choose your device
+4. Go to Product > Run
+5. On the device settings, go to Developer > Trust computer
