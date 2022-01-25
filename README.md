@@ -43,7 +43,6 @@ The app will be created using Swift and SwiftUI for the front-end. Swift is a po
 
 For detecting the centroid of a person, body landmarks will be detected, which includes nineteen body points. This is using the Vision Framework by Apple. The Vision framework performs body and face landmark detection, text detection, barcode recognition, image registration, and general feature tracking. Vision also allows the use of custom Core ML models for tasks like classification or object detection.
 
-![image](https://user-images.githubusercontent.com/90277008/141121033-091a6b93-2e1c-45dd-b431-a6166b527162.png)
 
 
 ## Install Steps
