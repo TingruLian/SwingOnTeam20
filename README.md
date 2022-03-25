@@ -19,7 +19,7 @@ BU ECE Senior Design Team 20
 
 ## Vision and Goals of Project
 
-The goal of this project is to create a golf swing improver that focuses on concentration, balance, and consistency. SwingOn is a native iOS app that tracks the motions of the golfer in real-time from live video or user uploaded videos.  Multiple factors of the golfer will be monitored, including body motion detection and head rotation. Data of the golfer’s motion will be recorded, stored and analyzed to calculate the golfer's balance and consistency of their swing as well as to keep a record of their improvement over time. 
+The goal of this project is to create a golf swing improver that focuses on balance and consistency. SwingOn is a native iOS app that tracks the motions of the golfer in real-time from live video or user uploaded videos.  Multiple factors of the golfer will be monitored, including body motion detection and balance. Data of the golfer’s motion will be recorded, stored and analyzed to calculate the golfer's balance and consistency of their swing as well as to keep a record of their improvement over time. 
 
 
 ## Scope and Features
@@ -29,7 +29,7 @@ The goal of this project is to create a golf swing improver that focuses on conc
   - Detects key body points of the user's body to calculate their centroid
 - Determines user's consistency
   - Calculates the change of the centroid's position over time
-- Provides auditory feedback
+- Provides auditory feedback to user about quality of swing
 
 
 ### Application
