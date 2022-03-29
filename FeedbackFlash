@@ -1,0 +1,41 @@
+//
+//  SwiftUIViewControllerFlash.swift
+//  SwingOnFlash
+//
+//  Created by Yoel Beyene on 3/29/22.
+//
+
+import SwiftUI
+
+struct SwiftUIViewControllerFlash: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+struct SwiftUIViewControllerFlash_Previews: PreviewProvider {
+    static var previews: some View {
+        SwiftUIViewControllerFlash()
+    }
+}
+
+import UIKit
+
+class ViewController: UIViewController {
+let colors: [UIColor] = [
+.systemYellow,
+.systemGreen,
+.systemRed,
+]
+override func viewDidLoad() {
+super.viewDidLoad()
+view.backgroundColor = .clear
+}
+
+@IBAction func didTapButton(_ sender: Any) {
+UIView.animate(withDuration: 1/12, delay: 0.0, options:[UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+self.view.backgroundColor = self.colors.randomElement()
+self.view.backgroundColor = self.colors.randomElement()
+}, completion: nil)
+}
+}
