@@ -14,18 +14,20 @@ import Foundation
 //private let bodyPoseRecognizedPointMinConfidence: VNConfidence = 0.1
 
 
+
 protocol PredictorDelegate: AnyObject {
     func predictor(_predictor: Predictor, didFindNewRecognizedPoints points: [CGPoint])
 }
 
-class Predictor {
+class Predictor: ObservableObject {
     
-    weak var delegate: PredictorDelegate?
+    @Published var playerDetected = false
+    var delegate: PredictorDelegate?
     var bodyPoseRequest = VNDetectHumanBodyPoseRequest()
     
 func displayBody(sampleBuffer: CMSampleBuffer){
     
-  //  print("displaybody")
+    print("displaybody")
     /// >> Body Pose Request
     // Request image handler for video
     let visionHandler = VNImageRequestHandler(cmSampleBuffer: sampleBuffer, options: [:])
@@ -39,9 +41,15 @@ func displayBody(sampleBuffer: CMSampleBuffer){
         // Retrieve observations
         guard let observation = bodyPoseRequest.results?.first
         else{
+            
             print("no observation")
+            playerDetected = false
+            print("player detected: \(playerDetected)")
             return
         }
+        
+        playerDetected = true
+        print("player detected: \(playerDetected)")
         
         let joints = getBodyJointsFor(observation: observation)
         print(joints.first!)
@@ -51,7 +59,16 @@ func displayBody(sampleBuffer: CMSampleBuffer){
         print(valuesArray)
         
         // Display points
+        if(delegate == nil){
+            print("delate == nil!")
+        }
+        else{
+            print(">>NOT NIL")
+        }
+        // CHECK!
         delegate?.predictor(_predictor: self, didFindNewRecognizedPoints: valuesArray)
+        //print(">> after predictor")
+        
         
     } catch {
         print("Unable to perform body pose detection request: \(error)")
@@ -68,9 +85,9 @@ func displayBody(sampleBuffer: CMSampleBuffer){
 ////
 
 
-/// Helper functions
+// MARK: Helper functions
 
-let jointsOfInterest: [VNHumanBodyPoseObservation.JointName] = [
+private let jointsOfInterest: [VNHumanBodyPoseObservation.JointName] = [
     .rightWrist,
     .rightElbow,
     .rightShoulder,
@@ -86,7 +103,7 @@ let jointsOfInterest: [VNHumanBodyPoseObservation.JointName] = [
 ]
 
 // Fetch specific body joints
-func getBodyJointsFor(observation: VNHumanBodyPoseObservation) -> ([VNHumanBodyPoseObservation.JointName: CGPoint]) {
+private func getBodyJointsFor(observation: VNHumanBodyPoseObservation) -> ([VNHumanBodyPoseObservation.JointName: CGPoint]) {
     var joints = [VNHumanBodyPoseObservation.JointName: CGPoint]()
     guard let identifiedPoints = try? observation.recognizedPoints(.all) else {
         return joints
