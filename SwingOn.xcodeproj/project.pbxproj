@@ -15,9 +15,11 @@
 		27F48EDA2745D3640031C693 /* FilePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F48ED92745D3640031C693 /* FilePickerModel.swift */; };
 		27F5FAD72744B54F0036FC22 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5FAD62744B54F0036FC22 /* MapViewModel.swift */; };
 		27F9C2F427456105008F591C /* PhotoPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9C2F327456105008F591C /* PhotoPickerModel.swift */; };
+		4C2AD91C27E041F0009FD01F /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2AD91B27E041F0009FD01F /* Feedback.swift */; };
 		4C7A456B275611E300474408 /* LiveVideoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A456A275611E300474408 /* LiveVideoAnalysis.swift */; };
 		4CD2517027498F690046B976 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2516F27498F680046B976 /* CameraModel.swift */; };
 		4CD251742749AF3F0046B976 /* VideoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD251732749AF3F0046B976 /* VideoViewer.swift */; };
+		4CF12EB32804CB7A004EED40 /* SwingOn-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF12EB22804CB7A004EED40 /* SwingOn-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +32,11 @@
 		27F48ED92745D3640031C693 /* FilePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilePickerModel.swift; path = SwingOn/FilePickerModel.swift; sourceTree = "<group>"; };
 		27F5FAD62744B54F0036FC22 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewModel.swift; path = SwingOn/MapViewModel.swift; sourceTree = "<group>"; };
 		27F9C2F327456105008F591C /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoPickerModel.swift; path = SwingOn/PhotoPickerModel.swift; sourceTree = "<group>"; };
+		4C2AD91B27E041F0009FD01F /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		4C7A456A275611E300474408 /* LiveVideoAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoAnalysis.swift; sourceTree = "<group>"; };
 		4CD2516F27498F680046B976 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		4CD251732749AF3F0046B976 /* VideoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewer.swift; sourceTree = "<group>"; };
+		4CF12EB22804CB7A004EED40 /* SwingOn-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwingOn-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 				4CD2516F27498F680046B976 /* CameraModel.swift */,
 				27F5FAD62744B54F0036FC22 /* MapViewModel.swift */,
 				4CD251732749AF3F0046B976 /* VideoViewer.swift */,
+				4C2AD91B27E041F0009FD01F /* Feedback.swift */,
 				27F9C2F327456105008F591C /* PhotoPickerModel.swift */,
 				27F48ED92745D3640031C693 /* FilePickerModel.swift */,
 				4C7A456A275611E300474408 /* LiveVideoAnalysis.swift */,
+				4CF12EB22804CB7A004EED40 /* SwingOn-ViewModel.swift */,
 				2727D6F4272FA628001DFC17 /* Assets.xcassets */,
 				2727D6F6272FA628001DFC17 /* Preview Content */,
 				2727D6FE272FA6C3001DFC17 /* Launch Screen.storyboard */,
@@ -154,9 +160,11 @@
 			files = (
 				4C7A456B275611E300474408 /* LiveVideoAnalysis.swift in Sources */,
 				4CD251742749AF3F0046B976 /* VideoViewer.swift in Sources */,
+				4C2AD91C27E041F0009FD01F /* Feedback.swift in Sources */,
 				27F48EDA2745D3640031C693 /* FilePickerModel.swift in Sources */,
 				2727D6F3272FA627001DFC17 /* ContentView.swift in Sources */,
 				4CD2517027498F690046B976 /* CameraModel.swift in Sources */,
+				4CF12EB32804CB7A004EED40 /* SwingOn-ViewModel.swift in Sources */,
 				2727D6F1272FA627001DFC17 /* SwingOnApp.swift in Sources */,
 				27F9C2F427456105008F591C /* PhotoPickerModel.swift in Sources */,
 				27F5FAD72744B54F0036FC22 /* MapViewModel.swift in Sources */,
