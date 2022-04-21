@@ -12,7 +12,7 @@ import Vision
 
 class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate{
     
-    // Create capture session
+    // MARK: 1. Create capture session
     var cameraFeedSession = AVCaptureSession()
     //var delegate: AVCapturePhotoCaptureDelegate?
     
@@ -28,7 +28,7 @@ class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBuf
     var bodyPoseRequest = VNDetectHumanBodyPoseRequest()
     
     let predictor = Predictor()
-    
+
     func checkPermissions(){
         switch AVCaptureDevice.authorizationStatus(for: .video){
             
@@ -80,7 +80,6 @@ class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBuf
         output.connection(with: .video)?.isEnabled = true
         cameraFeedSession.commitConfiguration()
         
-        
 //        // Set preview layer
 //        previewLayer.videoGravity = .resizeAspectFill
 //        previewLayer.session = session
@@ -88,6 +87,11 @@ class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBuf
         // Run capture session to start receiving video frames
 //        session.startRunning()
 //        cameraFeedSession = session
+    }
+    
+    func closeCamera(){
+        print("-- closing camera...")
+        cameraFeedSession.stopRunning()
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -134,8 +138,6 @@ class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBuf
 //            cameraFeedSession.stopRunning()
 //            print("Unable to perform body pose detection request: \(error)")
 //        }
-        
-        
     }
 }
 
@@ -153,12 +155,12 @@ struct CameraPreview: UIViewRepresentable{
         view.layer.addSublayer(camera.previewLayer)
         
         // new --> display joints
-        camera.previewLayer.frame = view.frame
-        view.layer.addSublayer(camera.pointsLayer)
-        camera.pointsLayer.frame = view.frame
-        camera.pointsLayer.strokeColor = UIColor.green.cgColor
-        
-        
+        //camera.previewLayer.frame = view.frame
+//        view.layer.addSublayer(camera.pointsLayer)
+//        camera.pointsLayer.frame = view.frame
+//        camera.pointsLayer.strokeColor = UIColor.green.cgColor
+    
+        print(">> camera preview after points layer")
         // Run capture session to start receiving video frames
         camera.cameraFeedSession.startRunning()
         
@@ -170,6 +172,8 @@ struct CameraPreview: UIViewRepresentable{
 // new --> extend class
 extension CameraModel: PredictorDelegate{
     func predictor(_predictor: Predictor, didFindNewRecognizedPoints points: [CGPoint]) {
+        
+        print("predictor delegate")
         guard let previewLayer = previewLayer else {
             print ("preview layer not initialized")
             return
@@ -179,6 +183,8 @@ extension CameraModel: PredictorDelegate{
             previewLayer.layerPointConverted(fromCaptureDevicePoint: $0)
         }
         
+        print("convertedPoints.first ", convertedPoints.first!)
+        
         let combinedPath = CGMutablePath()
         for point in convertedPoints{
             let dotPath = UIBezierPath(ovalIn: CGRect(x: point.x, y: point.y, width: 10, height: 10))
@@ -187,8 +193,9 @@ extension CameraModel: PredictorDelegate{
         
         pointsLayer.path = combinedPath
         
+    
 //        DispatchQueue.main.async {
-//            self.pointsLayer.didChangeValue(forKey: \.path)
+//            pointsLayer.didChangeValue(forKey: .path)
 //        }
     }
 }
