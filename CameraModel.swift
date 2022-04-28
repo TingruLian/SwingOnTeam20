@@ -56,7 +56,7 @@ class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBuf
         
         // Use device as input
         guard
-            let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice!), cameraFeedSession.canAddInput(videoDeviceInput)
+             let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice!), cameraFeedSession.canAddInput(videoDeviceInput)
         else{return}
         cameraFeedSession.addInput(videoDeviceInput)
          
@@ -73,7 +73,6 @@ class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBuf
         // Always process frames
         output.connection(with: .video)?.isEnabled = true
         cameraFeedSession.commitConfiguration()
-        
         
 //        // Set preview layer
 //        previewLayer.videoGravity = .resizeAspectFill
