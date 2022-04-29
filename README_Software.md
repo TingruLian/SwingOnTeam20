@@ -1,13 +1,19 @@
 # Software
-## Dev/build tool information
-###### Xcode
-###### SwiftUI
-###### TensorFlow
-###### Python
+## Development and Build Tools
+- XCode 13: IDE
+- Swift: app programming language
+- SwiftUI: UI framework
+- TensorFlow PoseNet: pose detection
+- Python: ML models programming language
 
 ## Installation
-###### Prerequisites
-###### To run
+### Prerequisites
+
+#### Software
+#### Hardware
+
+### To run
+Connect the device to the a supported computer running MacOS. On the menu bar go to Product > Destination to select the connected device. Then run the application by going to Product > Run (`Command + R`)
 
 ## Flow chart
 ![Block diagram](https://user-images.githubusercontent.com/90277008/165958257-38a1f301-b30a-49f6-b4c9-4a493ae16bc0.jpeg)
@@ -33,7 +39,6 @@ AVFoundation framework: AVFoundation is a multimedia framework with APIs in Swif
 ![b9c65b62-3728-43f1-8d25-08fd42bc6bb7](https://user-images.githubusercontent.com/90277008/165957655-9e0767f9-07b2-4701-b3d9-1e1a36f8656c.png)
 
 
-
 ## Upload videos from files
 UIDocumentPickerViewController: It provides access to documents or destinations outside the app's sandbox.
 
@@ -42,22 +47,25 @@ UIViewControllerRepresentable creates and manages a UIViewController object in S
 UIImagePickerControllermanages the system interfaces for taking pictures, recording movies, and choosing items from the user's media library.
 
 ## Video analysis 
-###### CoroeML
+### CoreML
 CoreML applies a machine learning algorithm to a set of training data to create a model. In this case, we use PoseNet to make predictions based on new input data. 
 ![renderedDark2x-1638462887](https://user-images.githubusercontent.com/90277008/165956344-00e41122-a48d-461e-b7be-c72f6abeaca0.png)
 
+### PoseNet Thunder
 PoseNet：Pretrained model for human body detection. It takes a processed camera image as the input and outputs 17 body keypoints. It uses GoogLeNet architecture for developing whihc contains 22 layers. The network is a real-time pose detection technique with which we can detect human beings’ poses in Image or Video.
 ![rendered2x-1586365563](https://user-images.githubusercontent.com/90277008/165956891-c038d3a7-06f3-4315-8da6-45817a467985.png)
 
 
-###### Algorithm
-Centroid: It is the center of mass calculated by analysis of detected body points. The centroids at each frame from all the frames in the video as a time series have been found and plotted.The curves of best fit for the centroids to analyze the balance of the golfer was also calculated in the algrotherism.
+### Algorithm
+#### Considerations
+- Centroid: It is the center of mass calculated by analysis of detected body points. The centroids at each frame from all the frames in the video as a time series have been found and plotted.The curves of best fit for the centroids to analyze the balance of the golfer was also calculated in the algrotherism.
 
-Hip Rotation: It is the degree the golfer rotates his waist during the swing by finding the angle of the current waistline to the on at initial position. The hip rotation at each frame of the video have been found and calculated.
+- Hip Rotation: It is the degree the golfer rotates his waist during the swing by finding the angle of the current waistline to the on at initial position. The hip rotation at each frame of the video have been found and calculated.
 
-Leading hip and ankle rotation: This is another method to find out if a golfer is balanced or not. The leading hip and ankle of the golfer and calculated the angle between this line and a vertical line to find out the regress of rotation.
+- Leading hip and ankle rotation: This is another method to find out if a golfer is balanced or not. The leading hip and ankle of the golfer and calculated the angle between this line and a vertical line to find out the regress of rotation.
 
-Multidimensional Scaling (MDS): MDS of Euclidean distance allows visualization of the level of similarity of individual cases in the centroid dataset.
+#### Models
+- Multidimensional Scaling (MDS): MDS of Euclidean distance allows visualization of the level of similarity of individual cases in the centroid dataset.
 
-K-means: K-means is an unsupervised classification algorithm that can group objects based on their characteristics. In the algrotherism, the centroid points of the golfer in each video was used as the data to classify.
+- K-means: K-means is an unsupervised classification algorithm that can group objects based on their characteristics. In the algrotherism, the centroid points of the golfer in each video was used as the data to classify.
 
