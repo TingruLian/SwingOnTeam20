@@ -28,11 +28,11 @@ To run and simulate the prototype:
 ### To run
 Connect the device to the a supported computer running MacOS. On the menu bar go to Product > Destination to select the connected device. Then run the application by going to Product > Run (`Command + R`)
 
+## Block Diagram
+![blockdiagram](https://user-images.githubusercontent.com/56104192/166063936-91d03c5e-ccf8-4e62-a58e-225d50805660.png)
 
-## Flow chart
-![Block diagram](https://user-images.githubusercontent.com/90277008/165958257-38a1f301-b30a-49f6-b4c9-4a493ae16bc0.jpeg)
-The front end uses Swift UI. When a user first opens the app, his or her location will be displayed on the main screen; this functionality uses Map API. 
-On the second screen, the user can choose "Open Camera" or "Upload from Files" which shows two options for as video origin: “Upload from files” and “Upload from Photo Library." Once the user chooses the video input, the data will be fed into the machine learning models which are integrated onto the device with CoreML. After using machine learning algorithms for the data, feedback is given back to the user.
+The front end uses Swift UI. When a user first opens the app, his or her location will be displayed on the main screen. 
+On the second screen, the user can choose "Open Camera" or "Upload from Files" which are the two options for video origin: “Upload from files” and “Upload from Photo Library." Once the user chooses the video input, the data will be fed into the machine learning models which are integrated onto the device with CoreML. After using machine learning algorithms for the data, feedback is given back to the user.
 
 
 ## Map
@@ -41,6 +41,7 @@ MapKit framework is used to display maps within the app. Due to privacy concerns
   - Display map information: Map API is used to get users’ locations 
 
   - Authorization status: Users need to authorize the app in order to use location services. The Location services must be enabled for their phone, which they can turn on in Settings > Privacy. The users will be asked if they allow SwingOn to use their locations. And there will then be three choices which are: “Allow Once”, “Allow while using the App”, and “Don’t Allow”. Users can also change their choices in Settings > Privacy > Location Services > SwingOn.
+
 
 
 ## Camera - CameraModel.swift
