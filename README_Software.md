@@ -10,8 +10,17 @@
 ###### To run
 
 ## Flow chart
+![Block diagram](https://user-images.githubusercontent.com/90277008/165958257-38a1f301-b30a-49f6-b4c9-4a493ae16bc0.jpeg)
+The front end is written using Swift UI. When a user first opens the app, his or her location will be displayed at the launch screen; Map API is used to determine the user’s location.  There are then different options from which  the user can choose. “Open Camera” connects to the Camera API, then “Upload from files” and “Upload from Photo Library” connect to the Video API. All of those API connect to Apple CPU, GPU and NPU. Then the data will go through machine learning models which CoreML uses to integrate. After using machine learning algrotherism for the data, feedback is given back to the user which shows at the front end. 
+
 
 ## Map
+MapKit: framework that allows the display of map or satellite imagery within the app. It asks for authorization when first entering the aApp.
+
+  - Display map information: Map API is used to get users’ locations 
+
+  - Authorization status: Users need to authorize the app in order to use location services. The Location services must be enabled for their phone, which they can turn on in Settings > Privacy. The users will be asked if they allow SwingOn to use their locations. And there will then be three choices which are: “Allow Once”, “Allow while using the App”, and “Don’t Allow”. Users can also change their choices in Settings > Privacy > Location Services > SwingOn.
+
 
 ## Camera
 AVFoundation framework: AVFoundation is a multimedia framework with APIs in Swift. It allows access to all the media devices on the iPhone. The AVFoundation combines six major technology areas for capturing, processing, synthesizing, controlling, importing, and exporting audiovisual media on Apple platforms. Many tasks can be completed using this framework in our App. 
