@@ -1,4 +1,4 @@
-# Software
+# SwingOn Software
 ## Development and Build Tools
 - XCode 13: IDE
 - Swift: app programming language
@@ -6,14 +6,28 @@
 - TensorFlow PoseNet: pose detection
 - Python: ML models programming language
 
-## Installation
+## Installation 
 ### Prerequisites
 
-#### Software
 #### Hardware
+To run and simulate the prototype:
+- A device running on iOS 15 or iPadOS 15
+- A computer running macOS Catalina (or later)
+
+#### Software
+- XCode 13
+- SwiftUI
+- Tensorflow PoseNet
+- CoreML
+
+##### Recommended set up:
+- macOS Monterey (>=12.3.1)
+- XCode 13 (>=13.3.1)
+- iOS 15 (>=15.4.1)
 
 ### To run
 Connect the device to the a supported computer running MacOS. On the menu bar go to Product > Destination to select the connected device. Then run the application by going to Product > Run (`Command + R`)
+
 
 ## Flow chart
 ![Block diagram](https://user-images.githubusercontent.com/90277008/165958257-38a1f301-b30a-49f6-b4c9-4a493ae16bc0.jpeg)
@@ -64,7 +78,7 @@ PoseNet：Pretrained model for human body detection. It takes a processed camera
 
 - Leading hip and ankle rotation: This is another method to find out if a golfer is balanced or not. The leading hip and ankle of the golfer and calculated the angle between this line and a vertical line to find out the regress of rotation.
 
-#### Models
+#### Methods
 - Multidimensional Scaling (MDS): MDS of Euclidean distance allows visualization of the level of similarity of individual cases in the centroid dataset.
 
 - K-means: K-means is an unsupervised classification algorithm that can group objects based on their characteristics. In the algrotherism, the centroid points of the golfer in each video was used as the data to classify.
