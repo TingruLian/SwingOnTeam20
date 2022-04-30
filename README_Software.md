@@ -46,9 +46,9 @@ To run **SwingOn**, users need these devices:
 
 ### Recommended Set Up
 
-- XCode 13 `13.3.1`
+- XCode `13.3.1`
 - macOS Monterey `12.3.1`
-- iOS 15 `15.4.1` or iPadOS 15 `15.4.1`
+- iOS `15.4.1` or iPadOS `15.4.1`
 
 ### To Run
 
