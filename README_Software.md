@@ -76,11 +76,19 @@ PoseNet：Pretrained model for human body detection. It takes a processed camera
 #### Methods
 - Centroid: It is the center of mass calculated by analyzing the following detected body points: shoulders and hips (right and left). The centroids at each frame from all the frames in the video as a time series have been found and plotted. The curves of best fit for the centroids to analyze the balance of the golfer was also calculated in the algorithm.
 
+![sammple](https://user-images.githubusercontent.com/90277008/166082147-e3b4de07-76e9-4ec3-b928-b1425cba511e.jpg)
+
 - Hip Rotation: It is the degree the golfer rotates his or her waist during the swing by finding the angle of the current waistline at initial position. The hip rotation at each frame of the video have been found and calculated.
 
+![download](https://user-images.githubusercontent.com/90277008/166082105-21cc0b30-ac06-46e2-a30b-4b8fd152ee6f.jpg)
+
 - Leading hip and ankle rotation: This is another method to find out if a golfer is balanced or not. The leading hip and ankle of the golfer and calculated the angle between this line and a vertical line to find out the regress of rotation.
+
+<img width="185" alt="Screen Shot 2022-04-29 at 20 05 33" src="https://user-images.githubusercontent.com/90277008/166082261-d01922e3-2c41-49d5-bd11-a8ad5c584773.png">
 
 #### Models
 - Multidimensional Scaling (MDS): MDS of Euclidean distance allows visualization of the level of similarity of individual cases in the centroid dataset.
 
 - K-means: Unsupervised classification algorithm that can group objects based on their characteristics. In the algorithm, the centroid points of the golfer in each video was used as the data to classify.
+- ![download](https://user-images.githubusercontent.com/90277008/166081855-0f21ce72-a16b-4fa7-afb1-23f3d3436352.png)
+
