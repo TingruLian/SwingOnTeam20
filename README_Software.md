@@ -14,40 +14,45 @@
 
 #### Hardware
 
-To run and simulate the prototype:
-- A device running on iOS 15 (`15.4.1 and later`) or iPadOS 15 (`15.4.1 and later`)
-- A computer running macOS Monterey (`12.3.1 and later`)
+To run the software:
+
+- An iPhone running iOS 15 (`15.4.1 and later`) or an iPad running iPadOS 15 (`15.4.1 and later`)
+> iOS 15 is packed with new features that help you connect with others, be more present and in the moment, explore the world, and use powerful intelligence to do more with iPhone than ever before.[^1]
+>
+> iPad enables you to do so much, so easily. iPadOS 15 takes this versatility further, making it easier to get things done, find and organize information, and make iPad even more capable.[^2]
+
+- A Mac running macOS Monterey (`12.3.1 and later`)
+> macOS Monterey builds on the same powerful foundation as macOS Big Sur, while offering distinct experiences designed just for the capabilities of Mac.
 
 #### Software
 
 - XCode 13
-> Xcode 13 adds powerful new team development features, perfect for working with Xcode Cloud as well as with GitHub, Bitbucket, and GitLab collaboration    features. Initiate, review, comment, and merge pull requests directly within Xcode. See teammates’ comments right inside code. And quickly compare any two versions of code files.
+> Xcode 13 adds powerful new team development features, perfect for working with Xcode Cloud as well as with GitHub, Bitbucket, and GitLab collaboration features. Initiate, review, comment, and merge pull requests directly within Xcode. See your teammates’ comments right inside your code. And quickly compare any two versions of your code files.
 
 - SwiftUI
-> SwiftUI helps devlopers build great-looking apps across all Apple platforms with the power of Swift — and as little code as possible. With SwiftUI, developers can bring even better experiences to all users, on any Apple device, using just one set of tools and APIs.
+> SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and as little code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device, using just one set of tools and APIs.
 
 - Tensorflow PoseNet
 > TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
 
 - Core ML
 > Core ML is optimized for on-device performance of a broad variety of model types by leveraging Apple hardware and minimizing memory footprint and power consumption.
+> 
+> Core ML is designed to seamlessly take advantage of powerful hardware technology including CPU, GPU, and Neural Engine, in the most efficient way in order to maximize performance while minimizing memory and power consumption.
 
 ##### Recommended set up:
 
 - XCode 13 (`13.3.1 and later`)
 
 - macOS Monterey (`12.3.1 and later`)
-> macOS Monterey builds on the same powerful foundation as macOS Big Sur, while offering distinct experiences designed just for the capabilities of Mac.
 
 - iOS 15 (`15.4.1 and later`)
-> iOS 15 is packed with new features that help you connect with others, be more present and in the moment, explore the world, and use powerful intelligence to do more with iPhone than ever before.
 
 - iPadOS 15 (`15.4.1 and later`)
-> iPad enables you to do so much, so easily. iPadOS 15 takes this versatility further, making it easier to get things done, find and organize information, and make iPad even more capable.
 
 ### To run
 
-Connect the device to the a supported computer running MacOS. On the menu bar go to Product > Destination to select the connected device. Then run the application by going to Product > Run (`Command + R`)
+Connect an iPhone running iOS 15 (`15.4.1 and later`) or an iPad running iPadOS 15 (`15.4.1 and later`) to the a Mac running macOS Monterey (`12.3.1 and later`). On the menu bar go to Product > Destination and select the connected device. Then run the application by going to Product > Run (`Command + R`)
 
 ## Block Diagram
 
@@ -118,3 +123,6 @@ PoseNet：Pretrained model for human body detection. It takes a processed camera
 - K-means: Unsupervised classification algorithm that can group objects based on their characteristics. In the algorithm, the centroid points of the golfer in each video was used as the data to classify.
 - ![download](https://user-images.githubusercontent.com/90277008/166081855-0f21ce72-a16b-4fa7-afb1-23f3d3436352.png)
 
+### Appendix
+[^1]: https://www.apple.com/ios/ios-15/
+[^2]: 
