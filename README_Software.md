@@ -2,35 +2,33 @@
 
 ## Development and Build Tools
 
-- XCode 13: IDE
-- Swift: App programming language
-- SwiftUI: UI framework
-- TensorFlow PoseNet: pose detection
-- Python: ML models programming language
+- Integrated Development Environment: **XCode**
+- Programming Language: **Swift**
+- Programming Language Framework: **SwiftUI**
+- Machine Learning Model Programming Language: **Python**
+- Machine Learning Model: **PoseNet (TensorFlow.js)**
 
 ## Installation
 
-### Prerequisites
-
-#### Hardware
+### Hardware
 
 To run the software:
 
-- An iPhone running iOS 15 (`15.4.1 and later`) or an iPad running iPadOS 15 (`15.4.1 and later`)
+- An **iPhone** running **iOS 15** (`15.4.1 and later`) or an **iPad** running **iPadOS 15** (`15.4.1 and later`)
 > iOS 15 is packed with new features that help you connect with others, be more present and in the moment, explore the world, and use powerful intelligence to do more with iPhone than ever before.[^1]
 >
 > iPad enables you to do so much, so easily. iPadOS 15 takes this versatility further, making it easier to get things done, find and organize information, and make iPad even more capable.[^2]
 
-- A Mac running macOS Monterey (`12.3.1 and later`)
-> macOS Monterey builds on the same powerful foundation as macOS Big Sur, while offering distinct experiences designed just for the capabilities of Mac.
+- A **Mac** running **macOS Monterey** (`12.3.1 and later`)
+> macOS Monterey builds on the same powerful foundation as macOS Big Sur, while offering distinct experiences designed just for the capabilities of Mac.[^3]
 
-#### Software
+### Software
 
 - XCode 13
-> Xcode 13 adds powerful new team development features, perfect for working with Xcode Cloud as well as with GitHub, Bitbucket, and GitLab collaboration features. Initiate, review, comment, and merge pull requests directly within Xcode. See your teammates’ comments right inside your code. And quickly compare any two versions of your code files.
+> Xcode 13 adds powerful new team development features, perfect for working with Xcode Cloud as well as with GitHub, Bitbucket, and GitLab collaboration features. Initiate, review, comment, and merge pull requests directly within Xcode. See your teammates’ comments right inside your code. And quickly compare any two versions of your code files.[^4]
 
 - SwiftUI
-> SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and as little code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device, using just one set of tools and APIs.
+> SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and as little code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device, using just one set of tools and APIs. [^5]
 
 - Tensorflow PoseNet
 > TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
@@ -40,7 +38,7 @@ To run the software:
 > 
 > Core ML is designed to seamlessly take advantage of powerful hardware technology including CPU, GPU, and Neural Engine, in the most efficient way in order to maximize performance while minimizing memory and power consumption.
 
-##### Recommended set up:
+#### Recommended set up:
 
 - XCode 13 (`13.3.1 and later`)
 
@@ -124,5 +122,7 @@ PoseNet：Pretrained model for human body detection. It takes a processed camera
 - ![download](https://user-images.githubusercontent.com/90277008/166081855-0f21ce72-a16b-4fa7-afb1-23f3d3436352.png)
 
 ### Appendix
-[^1]: https://www.apple.com/ios/ios-15/
-[^2]: 
+
+[^1]: iOS 15 - Apple https://www.apple.com/ios/ios-15/
+[^2]: iPadOS 15 - Apple https://www.apple.com/ipados/ipados-15/
+[^3]: macOS Monterey - Apple https://www.apple.com/macos/monterey/
