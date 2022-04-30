@@ -16,9 +16,13 @@ To run and simulate the prototype:
 
 #### Software
 - XCode 13
+> Xcode 13 adds powerful new team development features, perfect for working with Xcode Cloud as well as with GitHub, Bitbucket, and GitLab collaboration    features. Initiate, review, comment, and merge pull requests directly within Xcode. See teammates’ comments right inside code. And quickly compare any two versions of code files.
 - SwiftUI
+> SwiftUI helps build great-looking apps across all Apple platforms with the power of Swift — and as little code as possible. With SwiftUI, developers can bring even better experiences to all users, on any Apple device, using just one set of tools and APIs.
 - Tensorflow PoseNet
-- CoreML
+> TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
+- Core ML
+> Core ML is optimized for on-device performance of a broad variety of model types by leveraging Apple hardware and minimizing memory footprint and power consumption.
 
 ##### Recommended set up:
 - macOS Monterey (>=12.3.1)
